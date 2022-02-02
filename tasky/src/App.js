@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Task from './components/Task';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Simi <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container">
+      <h1>Tasky</h1>
+      <Task title="Dishes" deadline="Today" description="Empty Dishwasher">
+      </Task>
+      <Task
+       title="Laundry" deadline="Tommorow" description="Fold Laundry and put it away">
+      </Task> 
+      <Task
+       title="Tidy" deadline="Today" description="Clean Up Room">
+       </Task>
+      </div>
   );
 }
 
